@@ -16,6 +16,18 @@ const app = express();
 app.use(express.static(staticPath));
 
 //routers
+
+
+//404 router
+app.get('/404', (req,res)=>{
+    res.sendFile(path.join(staticPath, "404.html"));
+})
+
+app.use((req,res)=>{
+    res.redirect('/404');
+})
+
+
 //home route
 app.get("/", (req, res)=>{
     res.sendFile(path.join(staticPath,"index.html"));
