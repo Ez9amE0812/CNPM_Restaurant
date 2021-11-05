@@ -44,12 +44,10 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
     margin: 0 auto;
   }
   .container {
     margin: 0 auto;
-    max-width: 1610px;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -304,13 +302,6 @@ body {
       display: none;
 }
 
-@media screen and (min-width: 768px){
-    .banner{
-      .test1__image{
-        display: none;
-      }
-    }
-  }
   @media screen and (max-width: 1366px){
     .header{
       .icons{
@@ -325,123 +316,6 @@ body {
   }
   
   @media screen and (max-width: 1023px) {
-      .banner {
-        object-fit: contain;
-      }
-  
-      .sale{
-        display: block;
-        .sale1{
-          margin-bottom: 2rem;
-        }
-      }
-  
-      .bestseller{
-        &__item {
-          width: calc(50% - 22.5px);
-          margin-bottom: 2.5rem;
-        }
-      }
-  
-      .category {
-        &__item {
-          width: calc(50% - 22.5px);
-          margin-bottom: 2.5rem;
-        }
-      }
-      .feature {
-        padding-top: 10rem;
-        &__item {
-          flex-direction: column;
-          margin-bottom: 8rem;
-          &:nth-child(even) {
-            flex-direction: column;
-            .feature__info {
-              padding: 0;
-            }
-          }
-          &:nth-child(odd) .feature__info {
-            padding: 0;
-          }
-        }
-        &__image,
-        &__info {
-          width: 100%;
-        }
-        &__image img {
-          margin: 0 auto 5rem;
-        }
-      }
-      .partner {
-        &__title {
-          padding-bottom: 4rem;
-          margin-bottom: 4rem;
-        }
-      }
-    }
-    @media screen and (max-width: 767px) {
-      .banner{
-        .test__image{
-          display: none;
-        }
-      }
-      .sale{
-       display: none;
-      }
-      .bestseller{
-        &__item {
-          width: 100%;
-          margin-bottom: 2.5rem;
-        }
-        &__image {
-          height: 15rem;
-        }
-      }
-      .category {
-        &__item {
-          width: 100%;
-          margin-bottom: 2.5rem;
-        }
-        &__image {
-          height: 15rem;
-        }
-      }
-      .partner {
-        margin-bottom: 5rem;
-        &__list {
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        &__item {
-          width: 50%;
-          margin-bottom: 2rem;
-          img {
-            margin: 0 auto;
-          }
-        }
-      }
-      .connect {
-        margin-bottom: 5rem;
-        &__list {
-          flex-wrap: wrap;
-        }
-        &__item {
-          width: calc(50% - 1rem);
-          margin-bottom: 2rem;
-        }
-      }
-      .subscribe {
-        &__container {
-          flex-direction: column;
-        }
-        &__title {
-          width: 100%;
-          margin-bottom: 2rem;
-        }
-        &__info {
-          width: 100%;
-        }
-      }
       .footer {
         &__container {
           flex-wrap: wrap;
@@ -451,18 +325,7 @@ body {
           margin-bottom: 2rem;
         }
       }
-    }
-    @media screen and (max-width: 479px) {
-      .banner {
-        &__heading {
-          font-size: 3rem;
-        }
-        &__buttons > .btn {
-          font-size: 1.2rem;
-        }
-      }
-    }
-    
+    }  
     @media (max-width:991px) {
       html{
         font-size: 55%;
@@ -535,4 +398,35 @@ body {
       }
     }
 
+
+    
+.footer {
+    &__container {
+      @include flex(flex-start, space-between);
+      padding-top: 3rem;
+      background-color: $primary-color;
+      border-radius: 15px;
+      span {
+          color: #2a2a2a;
+      }
+    }
+    &__item {
+      width: 25%;
+      .fa{
+        color: #2a2a2a;
+        margin-right: 1rem;
+      }
+    }
+    &__link {
+      color: #2a2a2a;
+      font-weight: 400;
+      font-size: 1.6rem;
+      display: block;
+      margin-bottom: 3rem;
+      width: fit-content;
+      &:hover {
+        padding-left: 1rem;
+      }
+    }
+  }
     
