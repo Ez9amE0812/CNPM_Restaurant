@@ -6,8 +6,13 @@
 <title>Foodee</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap  -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/cart.css">
+<!-- Fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+	integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -243,45 +248,175 @@
   	<!-- End Products -->
 
   	<!-- Shopping cart -->
-  	<div class="container cart-section">
-  		<div class="row">
-        <div class="col-md-8 cart">
-            <div class="title pb-3 pt-2">
-                <div class="row">
-                    <div class="col">
-                        <h4><b>Your Cart</b></h4>
-                    </div>
-                    <div class="col align-self-center text-right text-muted">3 items</div>
-                </div>
-            </div>
-            <div class="row border-top border-bottom">
-                <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="images/res_img_1.jpg"></div>
-                    <div class="col">
-                        <div class="row">Food name</div>
-                    </div>
-                    <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
-                    <div class="col">&#36;44.00</div>
-                    <div class="col"> <button class="btn-sm btn-outline-danger btn-del fs-4">&nbsp;X&nbsp;</button></div>
-                </div>
-            </div>           
-        </div>
-        <div class="col-md-4 summary">
-            <div>
-                <h5><b>Summary</b></h5>
-            </div>
-            <p class="mt-4 mb-2">PROMO CODE</p>
-            <form>
-                <input placeholder="Enter your code"> <button>Apply</button>
-            </form>
-            <div class="row my-4" style="border-top: 1px solid darkgray; padding: 2vh 0;">
-                <div class="col">TOTAL PRICE</div>
-                <div class="col text-right">&#36; 137.00</div>
-            </div> 
-            <button class="btn-purchase">PAYMENT</button>
-        </div>
-    </div>
-  	</div>
+	<div class="cart__section">
+		<div class="order-bar">
+			<i class="cart__bar-icon fas fa-shopping-cart"></i>
+			<span class="cart__toal-price">50$</span>
+		</div>
+
+		<div class="cart__wrapper">
+			<div class="cart__header">
+				<h2>Your cart</h2>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+			<ul class="cart__list">
+				<div class="cart__item">
+					<div class="cart__item-img">
+						<img src="https://healthyfoodcollection.netlify.app/Images/img12.jpg" alt="">
+					</div>
+					<div class="cart__item-info">
+						<div class="cart__item-wrap">
+							<h4 class="cart__item-name">Food name</h4>
+							<i class="cart__item-icon fas fa-times"></i>
+						</div>
+						<div class="cart__item-wrap">
+							<span class="cart__item-price">$12</span>
+							<div class="cart__item-control">
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-minus"></i>
+								</div>
+								<span>1</span>
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-plus"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__item">
+					<div class="cart__item-img">
+						<img src="https://healthyfoodcollection.netlify.app/Images/img12.jpg" alt="">
+					</div>
+					<div class="cart__item-info">
+						<div class="cart__item-wrap">
+							<h4 class="cart__item-name">Food name</h4>
+							<i class="cart__item-icon fas fa-times"></i>
+						</div>
+						<div class="cart__item-wrap">
+							<span class="cart__item-price">$12</span>
+							<div class="cart__item-control">
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-minus"></i>
+								</div>
+								<span>1</span>
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-plus"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__item">
+					<div class="cart__item-img">
+						<img src="https://healthyfoodcollection.netlify.app/Images/img12.jpg" alt="">
+					</div>
+					<div class="cart__item-info">
+						<div class="cart__item-wrap">
+							<h4 class="cart__item-name">Food name</h4>
+							<i class="cart__item-icon fas fa-times"></i>
+						</div>
+						<div class="cart__item-wrap">
+							<span class="cart__item-price">$12</span>
+							<div class="cart__item-control">
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-minus"></i>
+								</div>
+								<span>1</span>
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-plus"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__item">
+					<div class="cart__item-img">
+						<img src="https://healthyfoodcollection.netlify.app/Images/img12.jpg" alt="">
+					</div>
+					<div class="cart__item-info">
+						<div class="cart__item-wrap">
+							<h4 class="cart__item-name">Food name</h4>
+							<i class="cart__item-icon fas fa-times"></i>
+						</div>
+						<div class="cart__item-wrap">
+							<span class="cart__item-price">$12</span>
+							<div class="cart__item-control">
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-minus"></i>
+								</div>
+								<span>1</span>
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-plus"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__item">
+					<div class="cart__item-img">
+						<img src="https://healthyfoodcollection.netlify.app/Images/img12.jpg" alt="">
+					</div>
+					<div class="cart__item-info">
+						<div class="cart__item-wrap">
+							<h4 class="cart__item-name">Food name</h4>
+							<i class="cart__item-icon fas fa-times"></i>
+						</div>
+						<div class="cart__item-wrap">
+							<span class="cart__item-price">$12</span>
+							<div class="cart__item-control">
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-minus"></i>
+								</div>
+								<span>1</span>
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-plus"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__item">
+					<div class="cart__item-img">
+						<img src="https://healthyfoodcollection.netlify.app/Images/img12.jpg" alt="">
+					</div>
+					<div class="cart__item-info">
+						<div class="cart__item-wrap">
+							<h4 class="cart__item-name">Food name</h4>
+							<i class="cart__item-icon fas fa-times"></i>
+						</div>
+						<div class="cart__item-wrap">
+							<span class="cart__item-price">$12</span>
+							<div class="cart__item-control">
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-minus"></i>
+								</div>
+								<span>1</span>
+								<div class="cart__item-control-wrap">
+									<i class="fas fa-plus"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</ul>
+
+			<div class="cart__overview">
+				<div class="cart__promo-code">
+					<input type="text" placeholder="Promo Code" class="cart__promo-typing">
+					<button class="cart__promo-apply">Apply</button>
+				</div>
+
+				<div class="cart__final-price">
+					<span>Total</span>
+					<span>$50</span>
+				</div>
+			</div>
+
+			<button class="cart__payment">Payment</button>
+
+		</div>
+	</div>
     <!-- End Shopping cart -->
   	
 	

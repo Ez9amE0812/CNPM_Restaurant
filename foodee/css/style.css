@@ -140,13 +140,3 @@ form button {
     color: white;
     background-color: crimson;
 }
-
-.cart-section .btn-del {
-    border: none;
-    background-color: white;
-}
-
-.cart-section .btn-del:hover {
-    border: none;
-    background-color: crimson;
-}
