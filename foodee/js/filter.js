@@ -1,5 +1,5 @@
-const btns = document.querySelectorAll('.btn');
-const storeProducts = document.querySelectorAll('.col');
+const btns = document.querySelectorAll('.filter-btn');
+const storeProducts = document.querySelectorAll('.product');
 // const search = document.getElementById(search);
 
 for (i = 0; i < btns.length; i++) {
