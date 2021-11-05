@@ -4,6 +4,10 @@
     padding: 20px auto;
 }
 
+.btn-group{
+    margin: auto;
+}
+
 a {
     text-decoration: none;
 }
