@@ -1,15 +1,31 @@
+#fbanner{
+    background-color: coral;
+    height: 100%;
+    padding: 20px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
 .card {
+    background-color: floralwhite;
     margin-bottom: 20px;
-    padding-top: 10px;
+    padding: 10px 20px;
     text-align: center;
     border: none;
     transition: all 0.5s;
 }
 .card:hover {
-    background-color: lightgray;
+    background-color: coral;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
 
 .card-text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
 }
