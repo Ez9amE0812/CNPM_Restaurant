@@ -100,7 +100,7 @@
 }
 .cart__item-icon {
     font-weight: 600;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .cart__item-control {
     display: flex;
@@ -111,18 +111,24 @@
 .cart__item-control-wrap {
     width: 25px;
     height: 25px;
-    border: 1px solid #ff7f50;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
 }
-.cart__item-control-wrap:hover {
-    background-color: #ff7f50;
+.btn-quantity:hover {
+    background-color: crimson;
     color: #fff;
-    cursor: pointer;
 }
+.btn-quantity {
+    width: 25px;
+    height: 25px;
+    background-color: #fff ;
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 50%;
+}
+
 .cart__promo-code {
     display: flex;
     justify-content: space-between;
