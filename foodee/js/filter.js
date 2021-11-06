@@ -25,7 +25,7 @@ for (i = 0; i < btns.length; i++) {
 };
 
 // SEARCH FILTER
-const search = document.getElementById("search");
+const search = document.getElementById("search-box");
 const productName = document.querySelectorAll(".product-details h2");
 
 // FILTER THROUGH THE PRODUCTS

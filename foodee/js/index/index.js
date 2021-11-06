@@ -7,14 +7,14 @@ document.querySelector('#search-btn').onclick = () =>{
     header__menu.classList.remove('active');
 }
 
-let cart = document.querySelector('.shopping-card');
+// let cart = document.querySelector('.shopping-card');
 
-document.querySelector('#cart-btn').onclick = () =>{
-    cart.classList.toggle('active');
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    header__menu.classList.remove('active');
-}
+// document.querySelector('#cart-btn').onclick = () =>{
+//     cart.classList.toggle('active');
+//     searchForm.classList.remove('active');
+//     loginForm.classList.remove('active');
+//     header__menu.classList.remove('active');
+// }
 
 let loginForm = document.querySelector('.login-form');
 

@@ -1,3 +1,12 @@
+// Open Cart 
+const cartMenu = document.querySelector('.cart__wrapper');
+function openCart() {
+    cartMenu.classList.add('active')
+}
+function closeCart() {
+    cartMenu.classList.remove('active')
+}
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
