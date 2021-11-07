@@ -57,7 +57,7 @@ display:none;
     padding:5px 10px;
     position: absolute;
     cursor: pointer;
-    z-index: 4;
+    z-index: 0;
     top: 50%;
     transform: translateY(-50%);   
     background: rgba(0,0,0,0.5);

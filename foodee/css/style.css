@@ -13,12 +13,20 @@ a {
 }
 
 #flexiselDemo3 .card {
+    background-color: floralwhite;
     padding: 0px 10px 10px;
     margin: 10px 5px 40px;
 }
 
+#flexiselDemo3 .card:hover {
+    background-color: coral;
+}
+
 #flexiselDemo3 .card-body {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-family: 'Noto Serif';
+    color: black;
+
 }
 
 
@@ -31,20 +39,21 @@ a {
     transition: all 0.5s;
 }
 
+.card-text{
+    font-family: 'Noto Serif';
+    color: black;
+    font-size: 2em;
+}
 
 
-.card:hover {
+
+.album .card:hover {
     background-color: coral;
 }
 
 .card-img-top {
     width: 100%;
     height: auto;
-}
-
-.card-text {
-    font-size: 1.5em;
-    color: black;
 }
 
 .price-text {
@@ -152,4 +161,11 @@ form button {
     border: none;
     color: white;
     background-color: crimson;
+}
+
+h2.text-center {
+  font-size: 3.5rem;
+  font-family: 'Noto Serif';
+  font-weight: 600;
+  color: firebrick;
 }
