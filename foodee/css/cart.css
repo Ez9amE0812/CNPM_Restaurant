@@ -37,6 +37,7 @@
     border-top-right-radius: 5px;
     transform: translateY(100%);
     transition: all ease 0.5s;
+    z-index: 99;
 }
 .cart__wrapper.active {
     transform: translateY(0);
