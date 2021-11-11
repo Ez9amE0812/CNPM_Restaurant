@@ -76,10 +76,11 @@ function addItemToCart(title, price, imageSrc) {
     var cartItemNames = cartItems.getElementsByClassName('cart__item-name')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
+            showAlert('This item is already added to the cart')
             return
         }
     }
+  
 
     var cartRowContents = `
             <div class="cart__item-img">
@@ -125,4 +126,15 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
     document.getElementsByClassName('cart-total-price')[1].innerText = '$' + total
+}
+
+const showAlert = (msg) => {
+    let alertBox = document.querySelector('.alert-box');
+    let alertMsg = document.querySelector('.alert-msg');
+    alertMsg.innerHTML = msg;
+    alertBox.classList.add('show');
+    setTimeout(()=>{
+        alertBox.classList.remove('show');
+    },3000);
+    return false;
 }

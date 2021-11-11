@@ -69,9 +69,6 @@ body {
 .header__menu-item {
   margin-left: 5rem;
 }
-
-
-
 .header__menu-item:last-child {
   margin-left: 7rem;
 }
@@ -392,6 +389,42 @@ body {
 }
 .footer__link:hover {
   padding-left: 1rem;
+}
+
+.alert-box {
+  width: 300px;
+  min-height: 150px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s;
+  z-index: 999;
+}
+.alert-box .alert-img {
+  display: block;
+  margin: 10px auto 20px;
+  height: 60px;
+}
+.alert-box .alert-msg {
+  color: #e24c4b;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+  top: 50%;
 }
 
 /*# sourceMappingURL=index.css.map */
