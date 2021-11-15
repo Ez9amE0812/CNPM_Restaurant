@@ -164,15 +164,16 @@
 }
 .cart__payment {
     margin: auto;
-    border: none;
     padding: 12px 24px;
     border-radius: 12px;
     background-color: #dc3545;
     font-size: 20px;
     color: #fff; 
 }
+
 .cart__payment:hover {
     background-color: #bb2d3b;
+    color: #fff;
 }
 @media screen and (max-width: 739px) {
     .cart__wrapper {
