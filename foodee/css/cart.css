@@ -169,12 +169,13 @@
     background-color: #dc3545;
     font-size: 20px;
     color: #fff; 
+    outline: none;
+    border: none;
+}
+.cart__payment:disabled {
+    background-color: #ccc;
 }
 
-.cart__payment:hover {
-    background-color: #bb2d3b;
-    color: #fff;
-}
 @media screen and (max-width: 739px) {
     .cart__wrapper {
         right: 0;
