@@ -6,14 +6,15 @@ const productListingElement =document.querySelector('.product-listing');
 const applyForm = document.querySelector('.apply-form');
 const showApplyFormBtn = document.querySelector('#apply-btn');
 
-
 window.onload = () => {
     if(user){
         if(!user.seller){
             becomeSellerElement.classList.remove('hive');
+ 
         } else{
             loader.style.display = 'block';
             setupProducts();
+            productListingElement.classList.remove('hive');
         }
 
     } else {
@@ -58,7 +59,14 @@ const setupProducts = () => {
         body: JSON.stringify({email: user.email})
     })
     .then(res => res.json())
-    .then(data => console.log(data));
+    .then(data => {
+        loader.style.display = null;
+        productListingElement.classList.remove('hide');
+        if(data == 'no products'){
+            let emptySvg = document.querySelector('no-product-imgage');
+            emptySvg.classList.remove('hive');
+        }else{
+            data.forEach(product => createProduct(product));
+        }
+    } );
 }
-
-
