@@ -13,24 +13,19 @@
     align-items: center;    
     font-size: 1.6rem;
 }
-.header__back-wrap {
+.header__back-btn {
+    border: none;
     padding: 8px 16px;
-    background-color: rgb(14, 0, 90);
-    border-radius: 10px;
     margin-right: 12px;
-    cursor: pointer;
-}
-.header__back-wrap a {
+    background-color: rgb(25, 13, 94);
     color: #fff;
+    border-radius: 10px;
 }
 .header__back span {
     font-weight: 600;
 }
-.header__back-wrap:hover {
-    background-color: rgb(28, 1, 161);
-}
-.header__back-wrap:hover .header__back-icon {
-    color: #fff;
+.header__back-btn:hover {
+    filter:  brightness(70%);
 }
 .header__title {
     font-size: 2rem;

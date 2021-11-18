@@ -15,9 +15,7 @@
 <body>
     <header class="header">
         <div class="header__back">
-            <div class="header__back-wrap">
-                <a href="./index.html"><i class="header__back-icon fa fa-chevron-left"></i></a>
-            </div>
+            <button class="header__back-btn"><i class="fa fa-chevron-left"></i></button>
             <span>Trở về</span>
         </div>
         <h3 class="header__title">Thanh toán</h3>
@@ -152,77 +150,7 @@
         </div>
     </div>
     
-
-    <script>
-        const $ = document.querySelector.bind(document)
-        const $$ = document.querySelectorAll.bind(document)
-
-        const pricels = localStorage.getItem('TotalPrice')
-        const price = $('.payment__total-price');
-        price.innerHTML = pricels + '$'
-
-        const paymentList = $('.payment__methods-lists')
-        const atmPayment = $('#atm')
-        const atmOptions = $('.atm-options')
-        const creditPayment = $('#credit-debit')
-        const creditCard = $('.credit-debit-card')
-
-        // Handle event about atm option
-        function showATM() {
-            atmOptions.classList.add('actived')
-            paymentList.style.display = 'none'
-        }
-        function turnOffATM() {
-            atmOptions.classList.remove('actived')
-            paymentList.style.display = 'block'
-        }
-        atmPayment.onchange = () => {
-            if (atmPayment.checked) showATM()
-            else turnOffATM()
-        }
-
-        function backToPayment() {
-            turnOffATM()
-            turnOffCreditCard()
-        }
-        
-        // Handle event about Credit/Debit card
-        function showCreditCard() {
-            creditCard.classList.add('actived')
-            paymentList.style.display = 'none'
-        }
-        function turnOffCreditCard() {
-            creditCard.classList.remove('actived')
-            paymentList.style.display = 'block'
-        }
-        creditPayment.onchange = () => {
-            if (creditPayment.checked) showCreditCard()
-            else turnOffCreditCard()
-        }
-    </script>
-
-    <!-- Handle check bank -->
-    <script> 
-        const atmItems = $$('.atm-img-wrap')
-        var isChecked = false
-        var preIndex
-        
-        atmItems.forEach((atmItem, index) => {
-            atmItem.onclick = (e) => {
-                if (this.isChecked) {
-                    atmItems[preIndex].classList.remove('actived')
-                    var elem = $('.checked')
-                    elem.parentNode.removeChild(elem)
-                    this.isChecked = !this.isChecked
-                }
-                atmItem.classList.add('actived')
-                atmItem.innerHTML += '<span class="checked">&#10003;</span>'
-                this.isChecked = !this.isChecked
-                this.preIndex = index
-            }
-        })
-    </script>
-
+    <script src="./js/payment.js"></script>
     <script src="./js/validator.js"></script>
     <script>
         Validator({
