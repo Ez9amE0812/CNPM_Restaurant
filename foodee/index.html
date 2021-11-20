@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -16,6 +15,7 @@
 <link rel="stylesheet" href="css/index/index.css">
 <link rel="stylesheet" href="css/cart.css">
 <link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/detail.css">
 
 </head>
 
@@ -151,7 +151,81 @@
         	<div class="col product vege">
         		
         	  	<div class="card shadow-sm">
-        	   		<img class="card-img-top" src="images/res_img_1.jpg" alt="Card image" style="width:100%">
+        	   		<img class="card-img-top" src="images/res_img_1.jpg" data-target="#Modal4" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					   <div class="modal" id="Modal4" tabindex="-1" role="dialog">
+						<div class="modal-dialog modal-lg" role="document">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title">ADD TO CART</h5>
+							  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							  </button>
+							</div>
+							<div class="modal-body">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-6">
+									  <img src="images/res_img_1.jpg" />
+									</div>
+									<div class="col-sm-6">
+										<div class="row">
+											<div class="col">
+												<p><big><b>SKU</b></big></p>
+												<P>452</p>
+												</div>
+												<div class="col">
+												   <p><big><b>Salad</b></big></p>
+												   <p>Salad</p>
+											   </div>
+											 <div class="col">
+													<p><big><b>Unit Price</b></big></p>
+													<p>$20.99</p>
+												</div>
+												</div>
+												<div class="custom-number-input h-10 w-32">
+													<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+													</label>
+												
+													<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+													  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+														<span class="m-auto text-2xl font-thin">−</span>
+													  </button>
+													  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+													<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+													  <span class="m-auto text-2xl font-thin">+</span>
+													</button>
+												  </div>
+												  <br>
+								 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+								 <p><b>Additives:</b> <i>03</i></p>
+								 <p><b>Baking material:</b> <i>040</i></p>
+								 <p><b>Food decoration:</b> <i>04</i></p>
+								 <div class="row">
+									 <div class="col-sm-6">
+						 
+						 <P><big><b>Side dishes (*)</b></big></p>
+						 </div>
+					  <div class="col-sm-6">
+							 
+							 <p><i>Selected quantity 0</i></p>
+						 </div>
+						 </div>
+								 <p><i>Please select one of the properties below</i></p>
+								 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+								 <label for="vegetable"><b>Vegetables</b></label><br>
+								 <br>
+								 <div class="d-grid gap-2">
+	
+									<button class="btn btn-primary" type="button">$0</button>
+								  </div>
+										 </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+					   </div>
+					   </div>
         	   		<div class="card-body">
         	     		<p class="card-text">Salad rau trộn</p>
         	       	  	<div class="d-flex justify-content-between align-items-center">
@@ -164,162 +238,706 @@
         	</div>
         	<div class="col product meat">
         		
-        	  	<div class="card shadow-sm">
-        	   		<img class="card-img-top" src="images/res_img_2.jpg" alt="Card image" style="width:100%">
-        	   		<div class="card-body">
-        	     		<p class="card-text">Sườn hầm tỏi</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
-	
-        	<div class="col product vege">
-        		
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_3.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Sandwich rau trộn</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
-	
-        	<div class="col product meat">
-        		
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_4.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Gà nướng mật ong</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
-        	<div class="col product dess">
-        		
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_5.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Nước ép táo mèo</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
-        	<div class="col product dess">
-        		
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_6.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Rượu táo mèo</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
-	
-        	<div class="col product dess">
-        		
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_7.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Nước ép</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
-        	<div class="col product meat">
-        		
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_8.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Bò nướng áp chảo</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
-       		<div class="col product dess">
-       			
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_9.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Kem kiwi</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
+				<div class="card shadow-sm">
+					<img class="card-img-top" src="images/res_img_2.jpg" data-target="#Modal5" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					<div class="modal" id="Modal5" tabindex="-1" role="dialog">
+					 <div class="modal-dialog modal-lg" role="document">
+					   <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title">ADD TO CART</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							 <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-6">
+								   <img src="images/res_img_2.jpg" />
+								 </div>
+								 <div class="col-sm-6">
+									 <div class="row">
+										<div class="col">
+											<p><big><b>SKU</b></big></p>
+											<P>452</p>
+											</div>
+											<div class="col">
+											   <p><big><b>Bread</b></big></p>
+											   <p>Bread</p>
+										   </div>
+										 <div class="col">
+												<p><big><b>Unit Price</b></big></p>
+												<p>$20.99</p>
+											</div>
+											</div>
+											<div class="custom-number-input h-10 w-32">
+												<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+												</label>
+											
+												<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+												  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+													<span class="m-auto text-2xl font-thin">−</span>
+												  </button>
+												  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+												<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+												  <span class="m-auto text-2xl font-thin">+</span>
+												</button>
+											  </div>
+											  <br>
+							 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+							 <p><b>Additives:</b> <i>03</i></p>
+							 <p><b>Baking material:</b> <i>040</i></p>
+							 <p><b>Food decoration:</b> <i>04</i></p>
+							 <div class="row">
+								 <div class="col-sm-6">
+					 
+					 <P><big><b>Side dishes (*)</b></big></p>
+					 </div>
+				  <div class="col-sm-6">
+						 
+						 <p><i>Selected quantity 0</i></p>
+					 </div>
+					 </div>
+							 <p><i>Please select one of the properties below</i></p>
+							 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+							 <label for="vegetable"><b>Vegetables</b></label><br>
+							 <br>
+							 <div class="d-grid gap-2">
 
+								<button class="btn btn-primary" type="button">$0</button>
+							  </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				   </div>
+				   </div>
+					<div class="card-body">
+					  <p class="card-text">Sườn hầm tỏi</p>
+						  <div class="d-flex justify-content-between align-items-center">
+						   <p class="price-text">$20.99</p>
+						   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+					   </div>
+					</div>
+			 </div>
+			 
+		 </div>
+	
         	<div class="col product vege">
-       			
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_10.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Salad trộn</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
+        		
+				<div class="card shadow-sm">
+					<img class="card-img-top" src="images/res_img_3.jpg" data-target="#Modal6" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					<div class="modal" id="Modal6" tabindex="-1" role="dialog">
+					 <div class="modal-dialog modal-lg" role="document">
+					   <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title">ADD TO CART</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							 <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-6">
+								   <img src="images/res_img_3.jpg" />
+								 </div>
+								 <div class="col-sm-6">
+									 <div class="row">
+										<div class="col">
+											<p><big><b>SKU</b></big></p>
+											<P>452</p>
+											</div>
+											<div class="col">
+											   <p><big><b>Bread</b></big></p>
+											   <p>Bread</p>
+										   </div>
+										 <div class="col">
+												<p><big><b>Unit Price</b></big></p>
+												<p>$20.99</p>
+											</div>
+											</div>
+											<div class="custom-number-input h-10 w-32">
+												<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+												</label>
+											
+												<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+												  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+													<span class="m-auto text-2xl font-thin">−</span>
+												  </button>
+												  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+												<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+												  <span class="m-auto text-2xl font-thin">+</span>
+												</button>
+											  </div>
+											  <br>
+							 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+							 <p><b>Additives:</b> <i>03</i></p>
+							 <p><b>Baking material:</b> <i>040</i></p>
+							 <p><b>Food decoration:</b> <i>04</i></p>
+							 <div class="row">
+								 <div class="col-sm-6">
+					 
+					 <P><big><b>Side dishes (*)</b></big></p>
+					 </div>
+				  <div class="col-sm-6">
+						 
+						 <p><i>Selected quantity 0</i></p>
+					 </div>
+					 </div>
+							 <p><i>Please select one of the properties below</i></p>
+							 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+							 <label for="vegetable"><b>Vegetables</b></label><br>
+							 <br>
+							 <div class="d-grid gap-2">
+
+								<button class="btn btn-primary" type="button">$0</button>
+							  </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				   </div>
+				   </div>
+					<div class="card-body">
+					  <p class="card-text">Sandwich rau trộn</p>
+						  <div class="d-flex justify-content-between align-items-center">
+						   <p class="price-text">$20.99</p>
+						   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+					   </div>
+					</div>
+			 </div>
+			 
+		 </div>
+        	<div class="col product dess">
+        		
+				<div class="card shadow-sm">
+					<img class="card-img-top" src="images/res_img_5.jpg" data-target="#Modal7" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					<div class="modal" id="Modal7" tabindex="-1" role="dialog">
+					 <div class="modal-dialog modal-lg" role="document">
+					   <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title">ADD TO CART</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							 <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-6">
+								   <img src="images/res_img_5.jpg" />
+								 </div>
+								 <div class="col-sm-6">
+									 <div class="row">
+										<div class="col">
+											<p><big><b>SKU</b></big></p>
+											<P>452</p>
+											</div>
+											<div class="col">
+											   <p><big><b>Bread</b></big></p>
+											   <p>Bread</p>
+										   </div>
+										 <div class="col">
+												<p><big><b>Unit Price</b></big></p>
+												<p>$20.99</p>
+											</div>
+											</div>
+											<div class="custom-number-input h-10 w-32">
+												<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+												</label>
+											
+												<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+												  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+													<span class="m-auto text-2xl font-thin">−</span>
+												  </button>
+												  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+												<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+												  <span class="m-auto text-2xl font-thin">+</span>
+												</button>
+											  </div>
+											  <br>
+							 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+							 <p><b>Additives:</b> <i>03</i></p>
+							 <p><b>Baking material:</b> <i>040</i></p>
+							 <p><b>Food decoration:</b> <i>04</i></p>
+							 <div class="row">
+								 <div class="col-sm-6">
+					 
+					 <P><big><b>Side dishes (*)</b></big></p>
+					 </div>
+				  <div class="col-sm-6">
+						 
+						 <p><i>Selected quantity 0</i></p>
+					 </div>
+					 </div>
+							 <p><i>Please select one of the properties below</i></p>
+							 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+							 <label for="vegetable"><b>Vegetables</b></label><br>
+							 <br>
+							 <div class="d-grid gap-2">
+
+								<button class="btn btn-primary" type="button">$0</button>
+							  </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				   </div>
+				   </div>
+					<div class="card-body">
+					  <p class="card-text">Nước ép táo mèo</p>
+						  <div class="d-flex justify-content-between align-items-center">
+						   <p class="price-text">$20.99</p>
+						   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+					   </div>
+					</div>
+			 </div>
+			 
+		 </div>
+	
+        	<div class="col product dess">
+        		
+				<div class="card shadow-sm">
+					<img class="card-img-top" src="images/res_img_7.jpg" data-target="#Modal9" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					<div class="modal" id="Modal9" tabindex="-1" role="dialog">
+					 <div class="modal-dialog modal-lg" role="document">
+					   <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title">ADD TO CART</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							 <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-6">
+								   <img src="images/res_img_7.jpg" />
+								 </div>
+								 <div class="col-sm-6">
+									 <div class="row">
+										<div class="col">
+											<p><big><b>SKU</b></big></p>
+											<P>452</p>
+											</div>
+											<div class="col">
+											   <p><big><b>Bread</b></big></p>
+											   <p>Bread</p>
+										   </div>
+										 <div class="col">
+												<p><big><b>Unit Price</b></big></p>
+												<p>$20.99</p>
+											</div>
+											</div>
+											<div class="custom-number-input h-10 w-32">
+												<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+												</label>
+											
+												<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+												  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+													<span class="m-auto text-2xl font-thin">−</span>
+												  </button>
+												  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+												<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+												  <span class="m-auto text-2xl font-thin">+</span>
+												</button>
+											  </div>
+											  <br>
+							 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+							 <p><b>Additives:</b> <i>03</i></p>
+							 <p><b>Baking material:</b> <i>040</i></p>
+							 <p><b>Food decoration:</b> <i>04</i></p>
+							 <div class="row">
+								 <div class="col-sm-6">
+					 
+					 <P><big><b>Side dishes (*)</b></big></p>
+					 </div>
+				  <div class="col-sm-6">
+						 
+						 <p><i>Selected quantity 0</i></p>
+					 </div>
+					 </div>
+							 <p><i>Please select one of the properties below</i></p>
+							 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+							 <label for="vegetable"><b>Vegetables</b></label><br>
+							 <br>
+							 <div class="d-grid gap-2">
+
+								<button class="btn btn-primary" type="button">$0</button>
+							  </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				   </div>
+				   </div>
+					<div class="card-body">
+					  <p class="card-text">Nước ép </p>
+						  <div class="d-flex justify-content-between align-items-center">
+						   <p class="price-text">$20.99</p>
+						   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+					   </div>
+					</div>
+			 </div>
         	    
         	</div>
+        	<div class="col product meat">
+        		
+				<div class="card shadow-sm">
+					<img class="card-img-top" src="images/res_img_8.jpg" data-target="#Modal8" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					<div class="modal" id="Modal8" tabindex="-1" role="dialog">
+					 <div class="modal-dialog modal-lg" role="document">
+					   <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title">ADD TO CART</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							 <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-6">
+								   <img src="images/res_img_8.jpg" />
+								 </div>
+								 <div class="col-sm-6">
+									 <div class="row">
+										<div class="col">
+											<p><big><b>SKU</b></big></p>
+											<P>452</p>
+											</div>
+											<div class="col">
+											   <p><big><b>Bread</b></big></p>
+											   <p>Bread</p>
+										   </div>
+										 <div class="col">
+												<p><big><b>Unit Price</b></big></p>
+												<p>$20.99</p>
+											</div>
+											</div>
+											<div class="custom-number-input h-10 w-32">
+												<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+												</label>
+											
+												<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+												  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+													<span class="m-auto text-2xl font-thin">−</span>
+												  </button>
+												  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+												<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+												  <span class="m-auto text-2xl font-thin">+</span>
+												</button>
+											  </div>
+											  <br>
+							 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+							 <p><b>Additives:</b> <i>03</i></p>
+							 <p><b>Baking material:</b> <i>040</i></p>
+							 <p><b>Food decoration:</b> <i>04</i></p>
+							 <div class="row">
+								 <div class="col-sm-6">
+					 
+					 <P><big><b>Side dishes (*)</b></big></p>
+					 </div>
+				  <div class="col-sm-6">
+						 
+						 <p><i>Selected quantity 0</i></p>
+					 </div>
+					 </div>
+							 <p><i>Please select one of the properties below</i></p>
+							 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+							 <label for="vegetable"><b>Vegetables</b></label><br>
+							 <br>
+							 <div class="d-grid gap-2">
+
+								<button class="btn btn-primary" type="button">$0</button>
+							  </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				   </div>
+				   </div>
+					<div class="card-body">
+					  <p class="card-text">Bò nướng áp chảo</p>
+						  <div class="d-flex justify-content-between align-items-center">
+						   <p class="price-text">$20.99</p>
+						   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+					   </div>
+					</div>
+			 </div>
+			 
+		 </div>
+		 <div class="col product vege">
+		 <div class="card shadow-sm">
+			<img class="card-img-top" src="images/res_img_10.jpg" data-target="#Modal10" data-toggle="modal" alt="Card image" style="width:100%"></a>
+			<div class="modal" id="Modal10" tabindex="-1" role="dialog">
+			 <div class="modal-dialog modal-lg" role="document">
+			   <div class="modal-content">
+				 <div class="modal-header">
+				   <h5 class="modal-title">ADD TO CART</h5>
+				   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					 <span aria-hidden="true">&times;</span>
+				   </button>
+				 </div>
+				 <div class="modal-body">
+					 <div class="container">
+						 <div class="row">
+							 <div class="col-sm-6">
+						   <img src="images/res_img_10.jpg" />
+						 </div>
+						 <div class="col-sm-6">
+							 <div class="row">
+								<div class="col">
+									<p><big><b>SKU</b></big></p>
+									<P>452</p>
+									</div>
+									<div class="col">
+									   <p><big><b>Bread</b></big></p>
+									   <p>Bread</p>
+								   </div>
+								 <div class="col">
+										<p><big><b>Unit Price</b></big></p>
+										<p>$20.99</p>
+									</div>
+									</div>
+									<div class="custom-number-input h-10 w-32">
+										<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+										</label>
+									
+										<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+										  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+											<span class="m-auto text-2xl font-thin">−</span>
+										  </button>
+										  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+										<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+										  <span class="m-auto text-2xl font-thin">+</span>
+										</button>
+									  </div>
+									  <br>
+					 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+					 <p><b>Additives:</b> <i>03</i></p>
+					 <p><b>Baking material:</b> <i>040</i></p>
+					 <p><b>Food decoration:</b> <i>04</i></p>
+					 <div class="row">
+						 <div class="col-sm-6">
+			 
+			 <P><big><b>Side dishes (*)</b></big></p>
+			 </div>
+		  <div class="col-sm-6">
+				 
+				 <p><i>Selected quantity 0</i></p>
+			 </div>
+			 </div>
+					 <p><i>Please select one of the properties below</i></p>
+					 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+					 <label for="vegetable"><b>Vegetables</b></label><br>
+					 <br>
+					 <div class="d-grid gap-2">
+
+						<button class="btn btn-primary" type="button">$0</button>
+					  </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+		   </div>
+		   </div>
+			<div class="card-body">
+			  <p class="card-text">Salad trộn</p>
+				  <div class="d-flex justify-content-between align-items-center">
+				   <p class="price-text">$20.99</p>
+				   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+			   </div>
+			</div>
+	 </div>
+	 </div>
         	<div class="col product dess">
        			
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_11.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Bánh mì sữa tỏi</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
+				<div class="card shadow-sm">
+					<img class="card-img-top" src="images/res_img_11.jpg" data-target="#Modal11" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					<div class="modal" id="Modal11" tabindex="-1" role="dialog">
+					 <div class="modal-dialog modal-lg" role="document">
+					   <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title">ADD TO CART</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							 <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-6">
+								   <img src="images/res_img_11.jpg" />
+								 </div>
+								 <div class="col-sm-6">
+									 <div class="row">
+										<div class="col">
+											<p><big><b>SKU</b></big></p>
+											<P>452</p>
+											</div>
+											<div class="col">
+											   <p><big><b>Bread</b></big></p>
+											   <p>Bread</p>
+										   </div>
+										 <div class="col">
+												<p><big><b>Unit Price</b></big></p>
+												<p>$20.99</p>
+											</div>
+											</div>
+											<div class="custom-number-input h-10 w-32">
+												<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+												</label>
+											
+												<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+												  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+													<span class="m-auto text-2xl font-thin">−</span>
+												  </button>
+												  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+												<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+												  <span class="m-auto text-2xl font-thin">+</span>
+												</button>
+											  </div>
+											  <br>
+							 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+							 <p><b>Additives:</b> <i>03</i></p>
+							 <p><b>Baking material:</b> <i>040</i></p>
+							 <p><b>Food decoration:</b> <i>04</i></p>
+							 <div class="row">
+								 <div class="col-sm-6">
+					 
+					 <P><big><b>Side dishes (*)</b></big></p>
+					 </div>
+				  <div class="col-sm-6">
+						 
+						 <p><i>Selected quantity 0</i></p>
+					 </div>
+					 </div>
+							 <p><i>Please select one of the properties below</i></p>
+							 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+							 <label for="vegetable"><b>Vegetables</b></label><br>
+							 <br>
+							 <div class="d-grid gap-2">
+
+								<button class="btn btn-primary" type="button">$0</button>
+							  </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				   </div>
+				   </div>
+					<div class="card-body">
+					  <p class="card-text">Bánh mì sữa tỏi</p>
+						  <div class="d-flex justify-content-between align-items-center">
+						   <p class="price-text">$20.99</p>
+						   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+					   </div>
+					</div>
+			 </div>
+			 </div>
         	<div class="col product vege">
        			
-        	  	<div class="card shadow-sm">
-        	    	<img class="card-img-top" src="images/res_img_12.jpg" alt="Card image" style="width:100%">
-        	    	<div class="card-body">
-        	     		<p class="card-text">Xôi tím muối vừng</p>
-        	       	  	<div class="d-flex justify-content-between align-items-center">
-                  			<p class="price-text">$20.99</p>
-                  			<button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
-              			</div>
-        	       	</div>
-        	    </div>
-        	    
-        	</div>
+				<div class="card shadow-sm">
+					<img class="card-img-top" src="images/res_img_12.jpg" data-target="#Modal15" data-toggle="modal" alt="Card image" style="width:100%"></a>
+					<div class="modal" id="Modal15" tabindex="-1" role="dialog">
+					 <div class="modal-dialog modal-lg" role="document">
+					   <div class="modal-content">
+						 <div class="modal-header">
+						   <h5 class="modal-title">ADD TO CART</h5>
+						   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							 <span aria-hidden="true">&times;</span>
+						   </button>
+						 </div>
+						 <div class="modal-body">
+							 <div class="container">
+								 <div class="row">
+									 <div class="col-sm-6">
+								   <img src="images/res_img_12.jpg" />
+								 </div>
+								 <div class="col-sm-6">
+									 <div class="row">
+										<div class="col">
+											<p><big><b>SKU</b></big></p>
+											<P>452</p>
+											</div>
+											<div class="col">
+											   <p><big><b>Bread</b></big></p>
+											   <p>Bread</p>
+										   </div>
+										 <div class="col">
+												<p><big><b>Unit Price</b></big></p>
+												<p>$20.99</p>
+											</div>
+											</div>
+							 <div class="custom-number-input h-10 w-32">
+								<label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold"><b>Quantity</b>
+								</label>
+							
+								<div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
+								  <button data-action="decrement" class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none">
+									<span class="m-auto text-2xl font-thin">−</span>
+								  </button>
+								  <input type="number" class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none" name="custom-input-number" value="0"></input>
+								<button data-action="increment" class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer">
+								  <span class="m-auto text-2xl font-thin">+</span>
+								</button>
+							  </div>
+							  <br>
+							 <p><b>Protein:</b> <i>What is Lorem Ipsum?</i></p>
+							 <p><b>Additives:</b> <i>03</i></p>
+							 <p><b>Baking material:</b> <i>040</i></p>
+							 <p><b>Food decoration:</b> <i>04</i></p>
+							 <div class="row">
+								 <div class="col-sm-6">
+					 
+					 <P><big><b>Side dishes (*)</b></big></p>
+					 </div>
+				  <div class="col-sm-6">
+						 
+						 <p><i>Selected quantity 0</i></p>
+					 </div>
+					 </div>
+							 <p><i>Please select one of the properties below</i></p>
+							 <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+							 <label for="vegetable"><b>Vegetables</b></label><br>
+							 <br>
+							 <div class="d-grid gap-2">
+
+								<button class="btn btn-primary" type="button">$0</button>
+							  </div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+				 </div>
+				   </div>
+					<div class="card-body">
+					  <p class="card-text">Xôi tím muối vừng</p>
+						  <div class="d-flex justify-content-between align-items-center">
+						   <p class="price-text">$20.99</p>
+						   <button type="button" class="btn btn-md btn-danger">ĐẶT HÀNG</button>
+					   </div>
+					</div>
+			 </div>
+			 </div>
       		</div>
     	</div>
   	</div>
@@ -358,7 +976,6 @@
 	</div>
     <!-- End Shopping cart -->
   	<!-- footer-->
-
 	  <footer class="footer" id="contact">
         <div class="container footer__container">
           <div class="footer__item">
@@ -389,6 +1006,43 @@
       </footer>
 
 	<!-- end footer-->
+	<script>
+		function decrement(e) {
+		  const btn = e.target.parentNode.parentElement.querySelector(
+			'button[data-action="decrement"]'
+		  );
+		  const target = btn.nextElementSibling;
+		  let value = Number(target.value);
+		  value--;
+		  target.value = value;
+		}
+	  
+		function increment(e) {
+		  const btn = e.target.parentNode.parentElement.querySelector(
+			'button[data-action="decrement"]'
+		  );
+		  const target = btn.nextElementSibling;
+		  let value = Number(target.value);
+		  value++;
+		  target.value = value;
+		}
+	  
+		const decrementButtons = document.querySelectorAll(
+		  `button[data-action="decrement"]`
+		);
+	  
+		const incrementButtons = document.querySelectorAll(
+		  `button[data-action="increment"]`
+		);
+	  
+		decrementButtons.forEach(btn => {
+		  btn.addEventListener("click", decrement);
+		});
+	  
+		incrementButtons.forEach(btn => {
+		  btn.addEventListener("click", increment);
+		});
+	  </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/filter.js"></script>
@@ -411,5 +1065,4 @@
 		});
 	</script>
 </body>
-</html>
 
