@@ -27,7 +27,7 @@ function ready() {
         input.addEventListener('change', quantityChanged)
     }
 
-    var addToCartButtons = document.getElementsByClassName('btn-md')
+    var addToCartButtons = document.getElementsByClassName('btn-item-add')
     for (var i = 0; i < addToCartButtons.length; i++) {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
@@ -62,22 +62,38 @@ function quantityAdd(event) {
 
 function addToCartClicked(event) {
     var button = event.target
-    var shopItem = button.parentElement.parentElement.parentElement
-    var title = shopItem.getElementsByClassName('card-text')[0].innerText
-    var price = shopItem.getElementsByClassName('price-text')[0].innerText
-    var imageSrc = shopItem.getElementsByClassName('card-img-top')[0].src
-    addItemToCart(title, price, imageSrc)
+    var shopItem = button.parentElement.parentElement.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('food-name')[0].innerText
+    var price = shopItem.getElementsByClassName('food-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('food-img')[0].src
+    var quantity = shopItem.getElementsByClassName('cart-quantity')[0].innerText
+    addItemToCart(title, price, imageSrc, quantity)
+    shopItem.getElementsByClassName('cart-quantity')[0].innerText = 1
+    updatePrice(button)
     updateCartTotal()
 }
 
-function addItemToCart(title, price, imageSrc) {
+
+function updatePrice(buttonClicked) {
+    var input = buttonClicked.parentElement.parentElement.parentElement.parentElement.parentElement
+    var quantity = input.getElementsByClassName('cart-quantity')[0].innerText
+    var price = parseFloat(input.getElementsByClassName('food-price')[0].innerText.replace('$', ''))
+    total = price * quantity
+    input.getElementsByClassName('btn-item-add')[0].innerText = '$' + total
+}
+
+
+function addItemToCart(title, price, imageSrc, quantity) {
     var cartRow = document.createElement('li')
     cartRow.classList.add('cart__item')
     var cartItems = document.getElementsByClassName('cart__list')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart__item-name')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            showAlert('This item is already added to the cart')
+            cartQuantity = cartItemNames[i].parentElement.parentElement.getElementsByClassName('cart-quantity')[0]
+            cartQuantity.innerText = parseInt(cartQuantity.innerText) + parseInt(quantity)
+            console.log(cartQuantity.innerText, quantity);
+            updateCartTotal()
             return
         }
     }
@@ -98,7 +114,7 @@ function addItemToCart(title, price, imageSrc) {
                         <div class="cart__item-control-wrap mx-1">
                             <button class="btn-quantity btn-sub">-</button>
                         </div>
-                        <span class="cart-quantity">1</span>
+                        <span class="cart-quantity">${quantity}</span>
                         <div class="cart__item-control-wrap mx-1">
                             <button class="btn-quantity btn-add">+</button>
                         </div>

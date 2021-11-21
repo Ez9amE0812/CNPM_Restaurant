@@ -109,6 +109,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.in-modal-quantity {
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
+}
 .cart__item-control-wrap {
     width: 25px;
     height: 25px;
